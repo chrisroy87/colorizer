@@ -20,34 +20,34 @@ $colorizer->spit();
 
 Simple. While this code is pretty self-explanatory, yet I would go ahead make it more sensible.
 
-- ++Initialization of the constructor++
+- #####Initialization of the constructor#####
 	The paramters are 
     1. Screen Width (or any width in terms of number of columns that you want)
     2. The background color (from the list of background colors in the source file)
     3. The foreground color (from the list of background colors in the source file)
     *`tput cols` is a handy command to count the number of columns*
 
-- ++Clear++
+- #####Clear#####
 	Clearing the screen
 
-- ++Add Message++
+- #####Add Message#####
 	Add a line of text or two. Since, this is a fluid interface, you can chain together multiple methods or the same method multiple times
 
-- ++Spit (output)++
+- #####Spit (output)#####
 	Output the final rendition of your masterpiece
 
 - - -
 ### Some convinience thrown in
 
-- ++Colorizer::end()++
+- #####Colorizer::end()#####
 
     This is a static method that terminates the dialogue with a message on screen
 
-- ++Colorizer::alert()++
+- #####Colorizer::alert()#####
 
 	Another static method that acts as a pop-up, well sort of. It displays your message for 2 seconds and then relinquishes control back to your script
 
-- ++newLn()++
+- #####newLn()#####
 
     This is a public function that simply adds a new line to the end of your message
 
