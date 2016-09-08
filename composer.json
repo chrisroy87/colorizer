@@ -1,0 +1,18 @@
+{
+    "name": "chrismervyn/colorizer",
+    "description": "A php class to manage background color, font color and font style on a CLI. It is compatible with all terminal screens.",
+    "type": "project",
+    "license": "See LICENSE",
+    "authors": [
+        {
+            "name": "Chris",
+            "email": "iam@thechris.in"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Colorizer\\": "src/"
+        }
+    }
+}
