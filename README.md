@@ -7,7 +7,7 @@
 > This is another example of the `Colorizer`
 ![Example Colorizer Dialogue](screenshots/screen-2.png)
 
-The primary feature of this class is in its **fluidity** and *simplicity*.
+The primary features of this class are in its **fluidity** and *simplicity*.
 
 #### Example Code
 ```
