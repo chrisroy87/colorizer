@@ -2,7 +2,7 @@
     "name": "chrismervyn/colorizer",
     "description": "A php class to manage background color, font color and font style on a CLI. It is compatible with all terminal screens.",
     "type": "project",
-    "license": "See LICENSE",
+    "license": "MIT",
     "authors": [
         {
             "name": "Chris",
