@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Colorizer by chrismervyn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Colorizer</h1>
+      <h2 class="project-tagline">A php class to manage background color, font color and font style on a CLI. It is compatible with all terminal screens.</h2>
+      <a href="https://github.com/chrismervyn/colorizer" class="btn">View on GitHub</a>
+      <a href="https://github.com/chrismervyn/colorizer/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/chrismervyn/colorizer/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="colorizer-" class="anchor" href="#colorizer-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Colorizer <img src="https://raw.githubusercontent.com/chrismervyn/colorizer/master/Colorizer.png" alt="Awesome Colorizer">
+</h1>
+
+<h3>
+<a id="the-nifty-php-class-to-add-some-color-to-your-boring-terminal-output" class="anchor" href="#the-nifty-php-class-to-add-some-color-to-your-boring-terminal-output" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The nifty PHP class to add some color to your boring terminal output</h3>
+
+<blockquote>
+<p>This is an example of a dialogue screen generated on BASH terminal screen using <code>Colorizer</code>
+<img src="https://raw.githubusercontent.com/chrismervyn/colorizer/master/screenshots/screen-1.png" alt="Example Colorizer Dialogue"></p>
+
+<p>This is another example of the <code>Colorizer</code>
+<img src="https://raw.githubusercontent.com/chrismervyn/colorizer/master/screenshots/screen-2.png" alt="Example Colorizer Dialogue"></p>
+</blockquote>
+
+<p>The primary features of this class are in its <strong>fluidity</strong> and <em>simplicity</em>.</p>
+
+<h4>
+<a id="example-code" class="anchor" href="#example-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example Code</h4>
+
+<pre><code>$colorizer = new Colorizer(`tput cols`,"green", "white");
+$colorizer-&gt;clear();
+$colorizer-&gt;addMessage("Welcome to the [u]Colorizer Example[/u]")-&gt;newLn();
+$colorizer-&gt;spit();
+
+</code></pre>
+
+<p>Simple. While this code is pretty self-explanatory, yet I would go ahead make it more sensible.</p>
+
+<ul>
+<li>
+<h5>
+<a id="initialization-of-the-constructor" class="anchor" href="#initialization-of-the-constructor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Initialization of the constructor</h5>
+
+<p>The paramters are </p>
+
+<ol>
+<li>Screen Width (or any width in terms of number of columns that you want)</li>
+<li>The background color (from the list of background colors in the source file)</li>
+<li>The foreground color (from the list of background colors in the source file)
+<em><code>tput cols</code> is a handy command to count the number of columns</em>
+</li>
+</ol>
+</li>
+<li>
+<h5>
+<a id="clear" class="anchor" href="#clear" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Clear</h5>
+
+<p>Clearing the screen</p>
+</li>
+<li>
+<h5>
+<a id="add-message" class="anchor" href="#add-message" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Add Message</h5>
+
+<p>Add a line of text or two. Since, this is a fluid interface, you can chain together multiple methods or the same method multiple times</p>
+</li>
+<li>
+<h5>
+<a id="spit-output" class="anchor" href="#spit-output" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Spit (output)</h5>
+
+<p>Output the final rendition of your masterpiece</p>
+</li>
+</ul>
+
+<hr>
+
+<h3>
+<a id="some-convinience-thrown-in" class="anchor" href="#some-convinience-thrown-in" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Some convinience thrown in</h3>
+
+<ul>
+<li>
+<h5>
+<a id="colorizerend" class="anchor" href="#colorizerend" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Colorizer::end()</h5>
+
+<p>This is a static method that terminates the dialogue with a message on screen</p>
+</li>
+<li>
+<h5>
+<a id="colorizeralert" class="anchor" href="#colorizeralert" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Colorizer::alert()</h5>
+
+<p>Another static method that acts as a pop-up, well sort of. It displays your message for 2 seconds and then relinquishes control back to your script</p>
+</li>
+<li>
+<h5>
+<a id="newln" class="anchor" href="#newln" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>newLn()</h5>
+
+<p>This is a public function that simply adds a new line to the end of your message</p>
+</li>
+</ul>
+
+<p>There is an <code>Example.php</code> file with this project. Do be sure to run it on your terminal and see almost all the features being used in that file.</p>
+
+<p>Alright then, happy CLI-<em>fying</em> everything!</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/chrismervyn/colorizer">Colorizer</a> is maintained by <a href="https://github.com/chrismervyn">chrismervyn</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
