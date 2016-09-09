@@ -1,6 +1,7 @@
 {
     "name": "chrismervyn/colorizer",
     "description": "A php class to manage background color, font color and font style on a CLI. It is compatible with all terminal screens.",
+    "keywords":["terminal color", "shell color", "face ncurses", "curses alternative", "php bash color"],
     "type": "project",
     "license": "MIT",
     "authors": [
