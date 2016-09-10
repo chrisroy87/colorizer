@@ -2,9 +2,11 @@
 
 ### The nifty PHP class to add some color to your boring terminal output
 > This is an example of a dialogue screen generated on BASH terminal screen using `Colorizer`
+> 
 ![Example Colorizer Dialogue](screenshots/screen-1.png)
 
 > This is another example of the `Colorizer`
+> 
 ![Example Colorizer Dialogue](screenshots/screen-2.png)
 
 The primary features of this class are in its **fluidity** and *simplicity*.
